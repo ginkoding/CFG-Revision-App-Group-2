@@ -1,9 +1,12 @@
 {% extends "base.html" %}
 
+<!-- Remove the navigation bar. Navbar not needed as there are links to the register page -->
 {% block nav %} {% endblock %}
 
+<!-- Change title to login -->
 {% block title %} login {% endblock %}
 
+<!-- Change template content in the <body> to include forms for the login. Login requires email and password. -->
 {% block content %}
 <br>
 <form method = 'POST'>
