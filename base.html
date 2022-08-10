@@ -1,4 +1,4 @@
-<!-- Base template for all pages in the Web app. Any changes to site layout can be made here. Remove Bootstrap CSS for new design. -->
+<!-- Base template for all pages in the Web app -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -53,7 +53,7 @@
     </div>
     </nav>
     {% endblock %}
-    <!-- St up flashed messages so that they appear below the navbar-->
+    <!-- Set up flashed messages so that they appear below the navbar-->
     {% with messages = get_flashed_messages(with_categories=true) %} 
         {% if messages %} 
             {% for category, message in messages %} 
