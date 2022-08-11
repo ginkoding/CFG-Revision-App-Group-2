@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %} Learn Css {% endblock %}
+{% block nav %} {% endblock %}
+{% block content %}
+    <h1 align="center"> Welcome to BELL learning- Learn Css </h1>
+    <br>
+        <div align="center" class="container">
+            <button onclick=window.location.href="{{url_for('css_basics')}}" class="btn btn-primary">Css Basics</button>
+            <button onclick=window.location.href="{{url_for('css_data_types')}}" class="btn btn-primary">Css Data Tags</button>
+            <button onclick=window.location.href="{{url_for('retrieve_css')}}" class="btn btn-primary">TBC</button>
+            <button onclick=window.location.href="{{url_for('retrieve_css')}}" class="btn btn-primary">TBC</button>
+        </div>
+
+
+{% endblock %}

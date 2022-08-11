@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %} Learn Javascript {% endblock %}
+{% block nav %} {% endblock %}
+{% block content %}
+    <h1 align="center"> Welcome to BELL learning- Learn Javascript </h1>
+    <br>
+        <div align="center" class="container">
+            <button onclick=window.location.href="{{url_for('javascript_operators')}}" class="btn btn-primary">Javascript Operators</button>
+            <button onclick=window.location.href="{{url_for('javascript_data_types')}}" class="btn btn-primary">Javascript Data Types</button>
+            <button onclick=window.location.href="{{url_for('javascript_methods')}}" class="btn btn-primary">Javascript Methods</button>
+            <button onclick=window.location.href="{{url_for('retrieve_javascript')}}" class="btn btn-primary">TBC</button>
+        </div>
+
+
+{% endblock %}

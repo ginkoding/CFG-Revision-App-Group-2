@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %} Learn HTML {% endblock %}
+{% block nav %} {% endblock %}
+{% block content %}
+    <h1 align="center"> Welcome to BELL learning- Learn HTML </h1>
+    <br>
+        <div align="center" class="container">
+            <button onclick=window.location.href="{{url_for('retrieve_html')}}" class="btn btn-primary">HTML Basics</button>
+            <button onclick=window.location.href="{{url_for('retrieve_html')}}" class="btn btn-primary">HTML Tags</button>
+            <button onclick=window.location.href="{{url_for('retrieve_javascript')}}" class="btn btn-primary">TBC</button>
+            <button onclick=window.location.href="{{url_for('retrieve_python')}}" class="btn btn-primary">TBC</button>
+        </div>
+
+
+{% endblock %}

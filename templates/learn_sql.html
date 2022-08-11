@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %} Learn SQL {% endblock %}
+{% block nav %} {% endblock %}
+{% block content %}
+    <h1 align="center"> Welcome to BELL learning- Learn SQL </h1>
+    <br>
+        <div align="center" class="container">
+            <button onclick=window.location.href="{{url_for('sql_basics')}}" class="btn btn-primary">SQL Basics</button>
+            <button onclick=window.location.href="{{url_for('sql_ordering_data')}}" class="btn btn-primary">SQL Ordering Data</button>
+            <button onclick=window.location.href="{{url_for('retrieve_sql')}}" class="btn btn-primary">TBC</button>
+            <button onclick=window.location.href="{{url_for('retrieve_sql')}}" class="btn btn-primary">TBC</button>
+        </div>
+
+
+{% endblock %}

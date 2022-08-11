@@ -1,0 +1,17 @@
+
+{% extends "base.html" %}
+{% block title %} Quiz Menu {% endblock %}
+{% block nav %} {% endblock %}
+{% block content %}
+    <h1 align="center"> Welcome back to BELL learning </h1>
+    <br>
+        <div align="center" class="container">
+            <button onclick=window.location.href="{{url_for('retrieve_css')}}" class="btn btn-primary">Learn Css</button>
+            <button onclick=window.location.href="{{url_for('retrieve_html')}}" class="btn btn-primary">Learn Html</button>
+            <button onclick=window.location.href="{{url_for('retrieve_javascript')}}" class="btn btn-primary">Learn Javascript</button>
+            <button onclick=window.location.href="{{url_for('retrieve_python')}}" class="btn btn-primary">Learn Python</button>
+            <button onclick=window.location.href="{{url_for('retrieve_sql')}}" class="btn btn-primary">Learn SQL</button>
+        </div>
+
+
+{% endblock %}
