@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+
+
+{% block title %} Logout {% endblock %}
+
+{% block content %}
+    <h1> Thank you for visiting BELL learning.</h1>
+    <h2> You have successfully logged out.</h2>
+    <a href="{{url_for('login')}}">Ready to log back in? Click here</a><br>
+
+{% endblock %}

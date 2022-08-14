@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %} Update details {% endblock %}
+
+{% block content %} 
+
+    <br>
+    <h1 align="center">Update your details below, {{ current_user.name}} </h1>
+    <br>
+
+    <form action='/update/{{name_to_update.id}}' method = 'POST'>
+      {{ form.hidden_tag()}}
+  
+      {{form.email.label(class="form-label")}}
+      {{form.email(class="form-control", value = name_to_update.email)}}
+    <br>
+
+      {{form.name.label(class="form-label")}}
+      {{form.name(class="form-control", value = name_to_update.name)}}
+    <br>
+    
+      {{form.submit(class="btn btn-primary")}}
+    </form>
+    <br>
+
+      
+{% endblock %}
+
