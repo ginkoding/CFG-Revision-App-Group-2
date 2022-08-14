@@ -1,0 +1,15 @@
+<!-- Extending the base template -->
+
+{% extends "base.html" %}
+{% block title %} Home {% endblock %}
+
+{% block content %}
+<br>
+    <h1 align="center"> Welcome to BELL learning</h1>
+    <br>
+    <div align="center" class="container">
+    <button onclick=window.location.href="{{url_for('login')}}" class="btn btn-primary">Already have an account? Login</button> 
+    <button onclick=window.location.href="{{url_for('sign_up')}}" class="btn btn-primary">Don't have an account? Register here</button>
+    </div>
+
+{% endblock %}
