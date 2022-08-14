@@ -6,9 +6,24 @@
 
 
     <br><h1> Welcome back to BELL learning, {{current_user.name}}. </h1><br>
-    <h2> Choose a topic to get started:</h2> 
 
-    <p></p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Choose a topic to get started:</h1>
+                <hr>
+    
+                <a href="/css-basics" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">CSS Basics</a>
+                <a href="/css_functions" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">CSS Functions</a>
+                <br>
+                <br>
+                <a href="/css_class" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">CSS Class</a>
+                <a href="/css_layout" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">CSS Layout</a>
+    
+            </div>
+        </div>
+    </div>
 
 
 {% endblock %}
