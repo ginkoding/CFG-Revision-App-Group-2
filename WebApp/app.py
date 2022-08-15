@@ -204,28 +204,28 @@ def css_basics():
     questions = cs_questions
     hints = cs_hints
 
-    return render_template("/public/css_basics.html", questions=questions, hints=hints)
+    return render_template("css_basics.html", questions=questions, hints=hints)
 
 @app.route("/css-basics-question-2")
 def css_basics_question_2():
     questions = cs_questions
     hints = cs_hints
 
-    return render_template("/public/css_basics_question_2.html", questions=questions, hints=hints)
+    return render_template("css_basics_question_2.html", questions=questions, hints=hints)
 
 @app.route("/css-basics-question-3")
 def css_basics_question_3():
     questions = cs_questions
     hints = cs_hints
 
-    return render_template("/public/css_basics_question_3.html", questions=questions, hints=hints)
+    return render_template("css_basics_question_3.html", questions=questions, hints=hints)
 
 @app.route("/css-basics-question-4")
 def css_basics_question_4():
     questions = cs_questions
     hints = cs_hints
 
-    return render_template("/public/css_basics_question_4.html", questions=questions, hints=hints)
+    return render_template("css_basics_question_4.html", questions=questions, hints=hints)
 
 # CSS Functions
 
@@ -234,27 +234,27 @@ def css_basics():
     questions = cs_questions
     hints = cs_hints
 
-    return render_template("/public/css_basics.html", questions=questions, hints=hints)
+    return render_template("css_basics.html", questions=questions, hints=hints)
 
 @app.route("/css-basics-question-2")
 def css_basics_question_2():
     questions = cs_questions
     hints = cs_hints
 
-    return render_template("/public/css_basics_question_2.html", questions=questions, hints=hints)
+    return render_template("css_basics_question_2.html", questions=questions, hints=hints)
 
 @app.route("/css-basics-question-3")
 def css_basics_question_3():
     questions = cs_questions
     hints = cs_hints
 
-    return render_template("/public/css_basics_question_3.html", questions=questions, hints=hints)
+    return render_template("css_basics_question_3.html", questions=questions, hints=hints)
 
 @app.route("/css-basics-question-4")
 def css_basics_question_4():
     questions = cs_questions
     hints = cs_hints
-    return render_template("/public/css_basics_question_4.html", questions=questions, hints=hints)
+    return render_template("css_basics_question_4.html", questions=questions, hints=hints)
 
 
 
