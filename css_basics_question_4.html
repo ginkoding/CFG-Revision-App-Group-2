@@ -1,0 +1,43 @@
+{% extends "public/templates/public_template.html" %}
+
+{% block title %}CSS Basics {% endblock %}
+
+{% block main %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>CSS Basics</h1>
+            <hr>
+            <h3>Question 4: {{ questions[4] }}</h3>
+            <br>
+            <br>
+            <label>Answer: </label>
+            <input class="form-control" type="text", name="answer", placeholder="Enter answer here">
+        </div>
+        <br>
+
+        <div class="container">
+            <div class="row">
+                <div >
+                    <br>
+                    <br>
+                    <button class="btn btn-warning btn-lg" onclick="HintsFunction()">Hint</button>
+
+                    <div id="HintsDiv" style="display:none">
+                      <h4>{{ hints[4] }}</h4>
+                    </div>
+                    <script>
+                        function HintsFunction() {
+                        var H = document.getElementById("HintsDiv");
+                        H.style.display = "block";  // <-- Set it to block
+}
+                    </script>
+
+                    <a href="/css-basics" class="btn btn-primary btn-lg active" role="button">Submit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
