@@ -1,3 +1,4 @@
+#Modules for all components (inc login)
 import email
 from flask import Flask, render_template, flash, request, redirect
 from flask_wtf import FlaskForm
@@ -7,6 +8,10 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_session import Session
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import login_user, LoginManager, UserMixin, current_user, logout_user, login_required
+#Modules required for questions
+from app.css_questions import cs_questions
+from app.css_questions import cs_hints
+from app.css_questions import cs_answers
 
 
 
@@ -191,6 +196,66 @@ def update(id):
 @login_required
 def index():
         return render_template('index.html')
+    
+# CSS Basic Routes
+
+@app.route("/css-basics")
+def css_basics():
+    questions = cs_questions
+    hints = cs_hints
+
+    return render_template("/public/css_basics.html", questions=questions, hints=hints)
+
+@app.route("/css-basics-question-2")
+def css_basics_question_2():
+    questions = cs_questions
+    hints = cs_hints
+
+    return render_template("/public/css_basics_question_2.html", questions=questions, hints=hints)
+
+@app.route("/css-basics-question-3")
+def css_basics_question_3():
+    questions = cs_questions
+    hints = cs_hints
+
+    return render_template("/public/css_basics_question_3.html", questions=questions, hints=hints)
+
+@app.route("/css-basics-question-4")
+def css_basics_question_4():
+    questions = cs_questions
+    hints = cs_hints
+
+    return render_template("/public/css_basics_question_4.html", questions=questions, hints=hints)
+
+# CSS Functions
+
+@app.route("/css-basics")
+def css_basics():
+    questions = cs_questions
+    hints = cs_hints
+
+    return render_template("/public/css_basics.html", questions=questions, hints=hints)
+
+@app.route("/css-basics-question-2")
+def css_basics_question_2():
+    questions = cs_questions
+    hints = cs_hints
+
+    return render_template("/public/css_basics_question_2.html", questions=questions, hints=hints)
+
+@app.route("/css-basics-question-3")
+def css_basics_question_3():
+    questions = cs_questions
+    hints = cs_hints
+
+    return render_template("/public/css_basics_question_3.html", questions=questions, hints=hints)
+
+@app.route("/css-basics-question-4")
+def css_basics_question_4():
+    questions = cs_questions
+    hints = cs_hints
+    return render_template("/public/css_basics_question_4.html", questions=questions, hints=hints)
+
 
 
 if __name__ == '__main__':
